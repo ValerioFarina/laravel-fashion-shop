@@ -11,7 +11,9 @@ class DressController extends Controller
     public function index() {
         $dresses = Dress::all();
         $sale_prices = $dresses->map(function($dress) {
-            return $dress->price - (($dress->price * $dress->percentage_discount) / 100);
+            $sale_price = $dress->price - (($dress->price * $dress->percentage_discount) / 100);
+            $sale_price = number_format($sale_price, 2, ",", ".");
+            return $sale_price;
         });
         $data = [
             'dresses' => $dresses,

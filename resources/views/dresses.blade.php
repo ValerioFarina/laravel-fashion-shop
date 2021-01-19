@@ -18,7 +18,7 @@
                     <ul class="dress-info">
                         @if ($dress->percentage_discount != 0)
                             <li>
-                                Original Price : {{ $dress->price }} euro
+                                Original Price : {{ number_format($dress->price, 2, ",", ".") }} euro
                             </li>
                         @endif
                         <li>
