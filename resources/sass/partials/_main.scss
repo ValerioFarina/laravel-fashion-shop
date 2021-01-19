@@ -8,11 +8,18 @@ main {
         flex-wrap: wrap;
 
         .dress-card {
+            width: 25%;
             margin: 25px;
-            padding: 25px;
             border: 1px solid $brand_secondary;
 
+            img {
+                width: 100%;
+                height: 335px;
+                object-fit: cover;
+            }
+
             ul {
+                padding: 25px;
                 list-style-type: none;
             }
         }

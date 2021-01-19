@@ -5,9 +5,11 @@
 @section('content')
     <div class="small-container">
         <div class="dresses-container">
-            @foreach ($dresses as $index => $dress)
+            @foreach ($dresses as $dress)
                 <div class="dress-card">
-                    <h2>Dresss {{ $index+1 }}</h2>
+                    <div class="dress_image">
+                        <img src="{{ asset("images/{$dress->image}.jpg") }}" alt="{{$dress->color}} dress">
+                    </div>
                     <ul>
                         <li>
                             Color : {{ $dress->color }}

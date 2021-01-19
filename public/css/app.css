@@ -48,12 +48,20 @@ main .dresses-container {
 }
 
 main .dresses-container .dress-card {
+  width: 25%;
   margin: 25px;
-  padding: 25px;
   border: 1px solid grey;
 }
 
+main .dresses-container .dress-card img {
+  width: 100%;
+  height: 335px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main .dresses-container .dress-card ul {
+  padding: 25px;
   list-style-type: none;
 }
 
