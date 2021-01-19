@@ -1,5 +1,23 @@
 header {
-    height: 50px;
-    background-color: grey;
-    color: white;
+    background-color: $brand_secondary;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 30px 20px;
+                text-decoration: none;
+                color: $brand_primary;
+
+                &:hover {
+                    color: $brand_secondary;
+                    background-color: $brand_primary;
+                }
+            }
+        }
+    }
 }

@@ -4,10 +4,33 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
-  height: 50px;
   background-color: grey;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  display: inline-block;
+  padding: 30px 20px;
+  text-decoration: none;
   color: white;
+}
+
+header ul li a:hover {
+  color: grey;
+  background-color: white;
 }
 
 main h1 {
