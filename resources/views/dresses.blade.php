@@ -7,23 +7,28 @@
         <div class="dresses-container">
             @foreach ($dresses as $index => $dress)
                 <div class="dress-card">
-                    <div class="dress_image">
+                    <div class="dress-image">
+                        @if ($dress->percentage_discount != 0)
+                            <span class="discount">
+                                - {{ $dress->percentage_discount }} %
+                            </span>
+                        @endif
                         <img src="{{ asset("images/{$dress->image}.jpg") }}" alt="{{$dress->color}} dress">
                     </div>
                     <ul>
+                        @if ($dress->percentage_discount != 0)
+                            <li>
+                                Original Price : {{ $dress->price }} euro
+                            </li>
+                        @endif
+                        <li>
+                            Sale price : {{ $sale_prices[$index] }} euro
+                        </li>
                         <li>
                             Color : {{ $dress->color }}
                         </li>
                         <li>
                             Size : {{ $dress->size }}
-                        </li>
-                            Original Price : {{ $dress->price }} euro
-                        </li>
-                        <li>
-                            Discount : {{ $dress->percentage_discount }} %
-                        </li>
-                        <li>
-                            Sale price : {{ $sale_prices[$index] }} euro
                         </li>
                     </ul>
                 </div>

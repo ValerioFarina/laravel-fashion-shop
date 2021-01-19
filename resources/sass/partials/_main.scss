@@ -6,21 +6,40 @@ main {
     .dresses-container {
         display: flex;
         flex-wrap: wrap;
+        padding: 50px 0;
 
         .dress-card {
-            width: 25%;
-            margin: 25px;
+            width: calc(25% - 30px);
+            margin: 15px;
             border: 1px solid $brand_secondary;
 
-            img {
-                width: 100%;
-                height: 335px;
-                object-fit: cover;
+            .dress-image {
+                position: relative;
+                height: 300px;
+
+                .discount {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    padding: 5px;
+                    background-color: yellow;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
             ul {
-                padding: 25px;
+                height: calc(100% - 300px);
+                padding: 15px;
+                font-size: 14px;
                 list-style-type: none;
+                background-color: $brand_secondary;
+                color: $brand_primary;
             }
         }
     }
