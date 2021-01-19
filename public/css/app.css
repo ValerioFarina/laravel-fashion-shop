@@ -1,4 +1,16 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background-color: grey;
+  color: white;
+}
+
+main h1 {
   color: red;
 }
 

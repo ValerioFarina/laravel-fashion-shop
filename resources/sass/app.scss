@@ -1,3 +1,4 @@
-h1 {
-    color: red;
-}
+@import "partials/_variables.scss";
+@import "partials/_common.scss";
+@import "partials/_header.scss";
+@import "partials/_main.scss";
