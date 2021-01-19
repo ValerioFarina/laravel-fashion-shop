@@ -10,7 +10,9 @@ class DressController extends Controller
 {
     public function index() {
         $dresses = Dress::all();
-        dd($dresses);
-        // return view('dresses');
+        $data = [
+            'dresses' => $dresses
+        ];
+        return view('dresses', $data);
     }
 }

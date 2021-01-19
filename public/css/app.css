@@ -9,6 +9,11 @@
   margin: 0 auto;
 }
 
+.small-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 header {
   background-color: grey;
 }
@@ -35,5 +40,20 @@ header ul li a:hover {
 
 main h1 {
   color: red;
+}
+
+main .dresses-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .dresses-container .dress-card {
+  margin: 25px;
+  padding: 25px;
+  border: 1px solid grey;
+}
+
+main .dresses-container .dress-card ul {
+  list-style-type: none;
 }
 

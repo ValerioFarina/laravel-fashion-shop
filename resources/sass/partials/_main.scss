@@ -2,4 +2,19 @@ main {
     h1 {
         color: red;
     }
+
+    .dresses-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .dress-card {
+            margin: 25px;
+            padding: 25px;
+            border: 1px solid $brand_secondary;
+
+            ul {
+                list-style-type: none;
+            }
+        }
+    }
 }
