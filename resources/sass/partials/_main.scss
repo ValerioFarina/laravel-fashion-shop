@@ -12,6 +12,12 @@ main {
             width: calc(25% - 30px);
             margin: 15px;
             border: 1px solid $brand_secondary;
+            text-decoration: none;
+            transition: transform 0.4s linear;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             .dress-image {
                 position: relative;
@@ -33,7 +39,7 @@ main {
                 }
             }
 
-            ul {
+            .dress-info {
                 height: calc(100% - 300px);
                 padding: 15px;
                 font-size: 14px;

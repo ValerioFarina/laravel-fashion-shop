@@ -52,6 +52,12 @@ main .dresses-container .dress-card {
   width: calc(25% - 30px);
   margin: 15px;
   border: 1px solid grey;
+  text-decoration: none;
+  transition: transform 0.4s linear;
+}
+
+main .dresses-container .dress-card:hover {
+  transform: scale(1.1);
 }
 
 main .dresses-container .dress-card .dress-image {
@@ -75,7 +81,7 @@ main .dresses-container .dress-card .dress-image img {
      object-fit: cover;
 }
 
-main .dresses-container .dress-card ul {
+main .dresses-container .dress-card .dress-info {
   height: calc(100% - 300px);
   padding: 15px;
   font-size: 14px;
