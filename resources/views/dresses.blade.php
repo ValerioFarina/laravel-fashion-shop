@@ -5,7 +5,7 @@
 @section('content')
     <div class="small-container">
         <div class="dresses-container">
-            @foreach ($dresses as $dress)
+            @foreach ($dresses as $index => $dress)
                 <div class="dress-card">
                     <div class="dress_image">
                         <img src="{{ asset("images/{$dress->image}.jpg") }}" alt="{{$dress->color}} dress">
@@ -17,8 +17,13 @@
                         <li>
                             Size : {{ $dress->size }}
                         </li>
+                            Original Price : {{ $dress->price }} euro
+                        </li>
                         <li>
-                            Price : {{ $dress->price }} euro
+                            Discount : {{ $dress->percentage_discount }} %
+                        </li>
+                        <li>
+                            Sale price : {{ $sale_prices[$index] }} euro
                         </li>
                     </ul>
                 </div>
